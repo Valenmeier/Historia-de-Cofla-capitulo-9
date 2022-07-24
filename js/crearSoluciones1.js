@@ -1,3 +1,16 @@
+document.body.innerHTML=""
+document.body.classList=""
+let mainProblema1=document.createElement(`DIV`)
+mainProblema1.classList.add(`main-problema1`)
+mainProblema1.innerHTML=`<form autocomplete="off">
+<h2>Inscripción de materias adeudadas</h2>
+<input type="text" placeholder="Nombre" id="nombre" required>
+<input type="email" placeholder="Email" id="email" required>
+<input type="text" placeholder="Materia adeudada" id="materia" required>
+<input type="submit" value="Solicitar mesa" id="btn-enviar">
+<div class="resultado"></div>
+</form>`
+document.body.appendChild(mainProblema1)
 const nombre=document.querySelector(`#nombre`);
 const email=document.querySelector(`#email`);
 const materia=document.querySelector(`#materia`);
